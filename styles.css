@@ -1,0 +1,121 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Music Player Container */
+.music-player {
+    width: 350px;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Player Header */
+.player-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#song-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#song-artist {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+/* Cover Container */
+.cover-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cover {
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 15px;
+    background-image: url('default-cover.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Audio Controls */
+.audio-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: #1ed760;
+}
+
+/* Progress Container */
+.progress-container {
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #1db954;
+    border-radius: 5px;
+}
+
+/* Volume Control */
+.volume-control input {
+    width: 100%;
+}
+
+/* Playlist */
+.playlist {
+    margin-top: 20px;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+}
+
+#playlist li {
+    padding: 8px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+#playlist li:hover {
+    background-color: #333;
+}
